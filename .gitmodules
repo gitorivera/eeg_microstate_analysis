@@ -1,0 +1,4 @@
+[submodule "openneuro/ds003775"]
+	path = openneuro/ds003775
+	url = https://github.com/OpenNeuroDatasets/ds003775.git
+	datalad-id = 315e0daf-f22d-4868-ab12-a8bb5a347210
