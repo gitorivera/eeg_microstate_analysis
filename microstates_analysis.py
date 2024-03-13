@@ -34,14 +34,16 @@ def load_eeg(set_file, tsv_file):
 
     return eeg_data, ch_names, sfreq
 
+
 # this is the file that has the annotations about sampling frequency, channels, etc.
 tsv_file = 'openneuro/ds003775/derivatives/cleaned_epochs/sub-001/ses-t1/eeg/sub-001_ses-t1_task-resteyesc_desc-epochs_channels.tsv'
 # this is the file that has the EEG data
 data_file = 'openneuro/ds003775/derivatives/cleaned_epochs/sub-001/ses-t1/eeg/sub-001_ses-t1_task-resteyesc_desc-epochs_eeg.set'
 
-
-#
+# load the data from the files
 data, ch_names, sfreq = load_eeg(set_file = data_file, tsv_file=tsv_file)
+
+
 print(sfreq)
 #print(ch_names)
 print(type(data))
